@@ -45,13 +45,11 @@ h4 {
   column-gap: calc(var(--spacing) * 2);
   align-items: center;
   grid-area: header;
-  justify-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .header {
     grid-template-columns: 150px 1fr;
-    justify-items: initial;
   }
 }
 
