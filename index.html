@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dmitry Svistun</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -14,7 +14,7 @@
   </head>
   <body class="body">
     <header class="header">
-      <img src="./1.jpg" class="avatar" />
+      <img src="./1.jpg" class="avatar" alt="avatar" />
 
       <div class="author">
         <h1 class="author__name">Dmitry Svistun</h1>
@@ -25,10 +25,10 @@
     <main class="main">
       <section class="basic-information">
         <article class="action-item">
-          <h4>Professional summary</h4>
+          <h3>Professional summary</h3>
 
           <p>
-            Front-end developer almost 3 years of experience in software
+            Front-end developer with almost 7 years of experience in software
             development and good knowledge of React. The technology stack
             includes JavaScript as the main programming language. A mature team
             worker who is adaptable to all challenging situations and able to
@@ -37,270 +37,421 @@
         </article>
 
         <article class="action-item">
-          <h4>Industries</h4>
+          <h3>Industries</h3>
 
-          <p>Healthcare, Property, Travel, Commerce</p>
+          <p>Healthcare, Property, Travel, E-Commerce, Entertainment</p>
         </article>
 
         <article class="action-item">
-          <h4>Technologies and tools</h4>
+          <h3>Technologies and tools</h3>
 
           <ul class="list">
             <li>JavaScript, TypeScript</li>
-            <li>
-              React, Redux, Redux-forms, Bootstrap 4, Lodash, Axios, Preact,
-              Recharts, Leaflet, Moment, GraphQL, Deck.gl, Next.js
-            </li>
-            <li>HTML5, CSS3, SCSS, LESS</li>
-            <li>Jest, Enzyme</li>
+            <li>React, GraphQL, Next.js, Nest.js</li>
+            <li>HTML, CSS, SCSS, LESS, Styled-components</li>
+            <li>Jest, Enzyme, React Testing Library, Cypress, Playwright</li>
             <li>Git</li>
-            <li>Webpack</li>
+            <li>Webpack, Vite</li>
+            <li>Postgres, Prisma, Docker</li>
+            <li>Nx, Lerna</li>
           </ul>
         </article>
       </section>
 
       <h2 class="project__header">Projects</h2>
       <section class="projects">
-        <section class="project">
-          <div class="project__summary">
-            <h3 class="project__name">J&H Tackle</h3>
-            <div>Duration: 07.2020 – till now</div>
-          </div>
+        <section class="company">
+          <header class="company__name">Luxoft</header>
 
-          <p class="project__desc">
-            A big online/offline store dedicated to fishing stuff.
-          </p>
+          <section class="project">
+            <section class="project__summary">
+              <h3 class="project__name">Tesco</h3>
+              <div>Duration: 05.2022 - till now</div>
+            </section>
 
-          <div class="project__team">
-            <div class="team-info">
-              <h4>Team</h4>
-              <span>5 specialists</span>
-            </div>
-
-            <div>
-              <h4>Position</h4>
-              <span>Front-end developer</span>
-            </div>
-          </div>
-
-          <div class="project__responsibilities">
-            <h4>Responsibilities</h4>
-
-            <ul class="list">
-              <li>Develop site from scratch</li>
-              <li>Support monolith version</li>
-              <li>Improve site metrics</li>
-              <li>Implement SSR for better SEO</li>
-              <li>Improving design according to client desires</li>
-            </ul>
-          </div>
-
-          <div class="project__tools">
-            <h4>Technologies and tools</h4>
-            <p>
-              TypeScript, React, Next.js, Redux, React Hook Form, Material-UI,
-              Lodash, Axios, HTML5, CSS3, SCSS, Git
+            <p class="project__desc">
+              While working in the Tesco company we have developed taxonomy
+              service, regulations service, keywords and synonyms services. I've
+              also committed to our design system to increase functionality of
+              components library. Latest big feature for the company that we
+              have developed was marketplace adoption into Tesco products
+              system.
             </p>
-          </div>
+
+            <div class="project__team">
+              <section class="team-info">
+                <h4>Team</h4>
+                <span>20 specialists</span>
+              </section>
+
+              <section>
+                <h4>Position</h4>
+                <span>Senior front-end developer</span>
+              </section>
+            </div>
+
+            <section class="project__tools">
+              <h4>Technologies and tools</h4>
+              <p>
+                React, Redux, Redux Toolkit, React Router, React Hook Form,
+                Styled-components, Git
+              </p>
+            </section>
+          </section>
+
+          <section class="project">
+            <section class="project__summary">
+              <h3 class="project__name">DreamWorks</h3>
+              <div>Duration: 10.2022 - till now</div>
+            </section>
+
+            <p class="project__desc">
+              During the period of work we have implemented threejs scene, so
+              the artists could watch closely different models and open them
+              directly in the app they need on the remote machine and a catalog
+              for quick preview of different assets. Also, we have implemented
+              application for tracking the packages and shipments.
+            </p>
+
+            <div class="project__team">
+              <section class="team-info">
+                <h4>Team</h4>
+                <span>5 specialists</span>
+              </section>
+
+              <section>
+                <h4>Position</h4>
+                <span>Senior front-end developer</span>
+              </section>
+            </div>
+
+            <section class="project__tools">
+              <h4>Technologies and tools</h4>
+              <p>React, Redux-saga, React Router, TanStack Query, Antd, Git</p>
+            </section>
+          </section>
         </section>
 
-        <section class="project">
-          <div class="project__summary">
-            <h3 class="project__name">Parimatch</h3>
-            <div>Duration: 04.2020 – 07.2020</div>
-          </div>
+        <section class="company">
+          <header class="company__name">Lohika</header>
 
-          <p class="project__desc">
-            Admin panel for defining staff authorize level, setting up gifts for
-            a region, different data visualization, data reports.
-          </p>
+          <section class="project">
+            <section class="project__summary">
+              <h3 class="project__name">Marqeta</h3>
+              <div>Duration: 05.2022 - till now</div>
+            </section>
 
-          <div class="project__team">
-            <div class="team-info">
-              <h4>Team</h4>
-              <span>10 specialists</span>
-            </div>
-
-            <div>
-              <h4>Position</h4>
-              <span>Front-end developer</span>
-            </div>
-          </div>
-
-          <div class="project__responsibilities">
-            <h4>Responsibilities</h4>
-
-            <ul class="list">
-              <li>Implemented new features and components</li>
-              <li>Redesign</li>
-              <li>Refactoring the code base</li>
-              <li>
-                Created technical documentation for reference and reporting
-              </li>
-            </ul>
-          </div>
-
-          <div class="project__tools">
-            <h4>Technologies and tools</h4>
-            <p>
-              React, Redux, GraphQL, ApolloClient, Semantic-UI, Lodash, HTML5,
-              CSS3, SCSS, Git, Recharts
+            <p class="project__desc">
+              While working in the Tesco company we have developed taxonomy
+              service, regulations service, keywords and synonyms services. I've
+              also committed to our design system to increase functionality of
+              components library. Latest big feature for the company that we
+              have developed was marketplace adoption into Tesco products
+              system.
             </p>
-          </div>
+
+            <div class="project__team">
+              <section class="team-info">
+                <h4>Team</h4>
+                <span>20 specialists</span>
+              </section>
+
+              <section>
+                <h4>Position</h4>
+                <span>Senior front-end developer</span>
+              </section>
+            </div>
+
+            <section class="project__tools">
+              <h4>Technologies and tools</h4>
+              <p>
+                React, Redux, Redux Toolkit, React Router, React Hook Form,
+                Styled-components, Git
+              </p>
+            </section>
+          </section>
+
+          <section class="project">
+            <section class="project__summary">
+              <h3 class="project__name">DreamWorks</h3>
+              <div>Duration: 10.2022 - till now</div>
+            </section>
+
+            <p class="project__desc">
+              During the period of work we have implemented threejs scene, so
+              the artists could watch closely different models and open them
+              directly in the app they need on the remote machine and a catalog
+              for quick preview of different assets. Also, we have implemented
+              application for tracking the packages and shipments.
+            </p>
+
+            <div class="project__team">
+              <section class="team-info">
+                <h4>Team</h4>
+                <span>5 specialists</span>
+              </section>
+
+              <section>
+                <h4>Position</h4>
+                <span>Senior front-end developer</span>
+              </section>
+            </div>
+
+            <section class="project__tools">
+              <h4>Technologies and tools</h4>
+              <p>React, Redux-saga, React Router, TanStack Query, Antd, Git</p>
+            </section>
+          </section>
         </section>
 
-        <section class="project">
-          <div class="project__summary">
-            <h3 class="project__name">TigerConnect</h3>
-            <div>Duration: 01.2020 – 04.2020</div>
-          </div>
+        <section class="company">
+          <header class="company__name">Attract group</header>
 
-          <p class="project__desc">
-            A platform for organizing personal training systems for Ultimate
-            Performance gyms located in London and in other 7 countries. It is
-            an app (iOS, Web) that administers training locations, trainers and
-            their clients, as well as gathers many client's metrics (nutrition,
-            sleep, weight, thickness of skin-fat stores, photos of progress,
-            etc.), that are used to create their individual optimal training
-            system.
-          </p>
-
-          <div class="project__team">
-            <div class="team-info">
-              <h4>Team</h4>
-              <span>10 specialists</span>
+          <section class="project">
+            <div class="project__summary">
+              <h3 class="project__name">J&H Tackle</h3>
+              <div>Duration: 07.2020 – till now</div>
             </div>
 
-            <div>
-              <h4>Position</h4>
-              <span>Front-end developer</span>
-            </div>
-          </div>
-
-          <div class="project__responsibilities">
-            <h4>Responsibilities</h4>
-
-            <ul class="list">
-              <li>Implemented new features and components</li>
-              <li>Evaluated and improved the program effectiveness</li>
-              <li>Identified and addressed performance bottlenecks</li>
-              <li>
-                Created technical documentation for reference and reporting
-              </li>
-              <li>Stabilization</li>
-              <li>Support</li>
-            </ul>
-          </div>
-
-          <div class="project__tools">
-            <h4>Technologies and tools</h4>
-            <p>
-              TypeScript, React, Redux, Redux-forms, Bootstrap 4, Lodash, Axios,
-              HTML5, CSS3, SCSS, Git, Reactstrap
+            <p class="project__desc">
+              A big online/offline store dedicated to fishing stuff.
             </p>
-          </div>
+
+            <div class="project__team">
+              <div class="team-info">
+                <h4>Team</h4>
+                <span>5 specialists</span>
+              </div>
+
+              <div>
+                <h4>Position</h4>
+                <span>Front-end developer</span>
+              </div>
+            </div>
+
+            <div class="project__responsibilities">
+              <h4>Responsibilities</h4>
+
+              <ul class="list">
+                <li>Develop site from scratch</li>
+                <li>Support monolith version</li>
+                <li>Improve site metrics</li>
+                <li>Implement SSR for better SEO</li>
+                <li>Improving design according to client desires</li>
+              </ul>
+            </div>
+
+            <div class="project__tools">
+              <h4>Technologies and tools</h4>
+              <p>
+                TypeScript, React, Next.js, Redux, React Hook Form, Material-UI,
+                Lodash, Axios, HTML5, CSS3, SCSS, Git
+              </p>
+            </div>
+          </section>
         </section>
 
-        <section class="project">
-          <div class="project__summary">
-            <h3 class="project__name">MosGorEnergosbyt</h3>
-            <div>Duration: 10.2018 – 12.2019</div>
-          </div>
+        <section class="company">
+          <header class="company__name">Andersen</header>
 
-          <p class="project__desc">
-            For the client with more than 10mln subscribers we developed a
-            web-registration and electricity invoice payment service. Focusing
-            on people of different age and computer literacy level, we maximally
-            simplified the registration and interface. We also developed a
-            product that provides a summary of various graphs, tables and other
-            analytical data.
-          </p>
-
-          <div class="project__team">
-            <div class="team-info">
-              <h4>Team</h4>
-              <span>12 specialists</span>
+          <section class="project">
+            <div class="project__summary">
+              <h3 class="project__name">Parimatch</h3>
+              <div>Duration: 04.2020 – 07.2020</div>
             </div>
 
-            <div>
-              <h4>Position</h4>
-              <span>Front-end developer</span>
-            </div>
-          </div>
-
-          <div class="project__responsibilities">
-            <h4>Responsibilities</h4>
-
-            <ul class="list">
-              <li>Implemented new features</li>
-              <li>Code optimization</li>
-              <li>Performance optimization</li>
-              <li>Bugs fixed</li>
-              <li>Stabilization</li>
-              <li>Support</li>
-            </ul>
-          </div>
-
-          <div class="project__tools">
-            <h4>Technologies and tools</h4>
-            <p>
-              JavaScript, React, Redux, Recharts, Leaflet, Moment, Redux-saga,
-              Jest, Enzyme, Webpack, SCSS, Git
+            <p class="project__desc">
+              Admin panel for defining staff authorize level, setting up gifts
+              for a region, different data visualization, data reports.
             </p>
-          </div>
-        </section>
 
-        <section class="project">
-          <div class="project__summary">
-            <h3 class="project__name">FTI</h3>
-            <div>Duration: 04.2018 – 10.2018</div>
-          </div>
+            <div class="project__team">
+              <div class="team-info">
+                <h4>Team</h4>
+                <span>10 specialists</span>
+              </div>
 
-          <p class="project__desc">
-            FTI Touristik operates as a tour operator and travel agency in
-            Germany. The company offers tours and holiday destinations
-            worldwide. It also provides holidays with accommodation, long haul
-            flights, and round trips. The company distributes its products
-            through travel agencies. Andersen team was responsible for language
-            courses module and vouchers application.
-          </p>
-
-          <div class="project__team">
-            <div class="team-info">
-              <h4>Team</h4>
-              <span>4 specialists</span>
+              <div>
+                <h4>Position</h4>
+                <span>Front-end developer</span>
+              </div>
             </div>
 
-            <div>
-              <h4>Position</h4>
-              <span>Front-end developer</span>
+            <div class="project__responsibilities">
+              <h4>Responsibilities</h4>
+
+              <ul class="list">
+                <li>Implemented new features and components</li>
+                <li>Redesign</li>
+                <li>Refactoring the code base</li>
+                <li>
+                  Created technical documentation for reference and reporting
+                </li>
+              </ul>
             </div>
-          </div>
 
-          <div class="project__responsibilities">
-            <h4>Responsibilities</h4>
+            <div class="project__tools">
+              <h4>Technologies and tools</h4>
+              <p>
+                React, Redux, GraphQL, ApolloClient, Semantic-UI, Lodash, HTML5,
+                CSS3, SCSS, Git, Recharts
+              </p>
+            </div>
+          </section>
 
-            <ul class="list">
-              <li>Developed SPA using React and Redux, Preact</li>
-              <li>Developed new features and components</li>
-              <li>Identified and addressed performance bottlenecks</li>
-              <li>
-                Created technical documentation for reference and reporting
-              </li>
-              <li>
-                Utilized good design practices, code reuse and wrote efficient
-                source code
-              </li>
-              <li>Stabilization</li>
-            </ul>
-          </div>
+          <section class="project">
+            <div class="project__summary">
+              <h3 class="project__name">TigerConnect</h3>
+              <div>Duration: 01.2020 – 04.2020</div>
+            </div>
 
-          <div class="project__tools">
-            <h4>Technologies and tools</h4>
-            <p>
-              JavaScript, React, Redux, Preact, SCSS, Webpack, Git, Ant Design
+            <p class="project__desc">
+              A platform for organizing personal training systems for Ultimate
+              Performance gyms located in London and in other 7 countries. It is
+              an app (iOS, Web) that administers training locations, trainers
+              and their clients, as well as gathers many client's metrics
+              (nutrition, sleep, weight, thickness of skin-fat stores, photos of
+              progress, etc.), that are used to create their individual optimal
+              training system.
             </p>
-          </div>
+
+            <div class="project__team">
+              <div class="team-info">
+                <h4>Team</h4>
+                <span>10 specialists</span>
+              </div>
+
+              <div>
+                <h4>Position</h4>
+                <span>Front-end developer</span>
+              </div>
+            </div>
+
+            <div class="project__responsibilities">
+              <h4>Responsibilities</h4>
+
+              <ul class="list">
+                <li>Implemented new features and components</li>
+                <li>Evaluated and improved the program effectiveness</li>
+                <li>Identified and addressed performance bottlenecks</li>
+                <li>
+                  Created technical documentation for reference and reporting
+                </li>
+                <li>Stabilization</li>
+                <li>Support</li>
+              </ul>
+            </div>
+
+            <div class="project__tools">
+              <h4>Technologies and tools</h4>
+              <p>
+                TypeScript, React, Redux, Redux-forms, Bootstrap 4, Lodash,
+                Axios, HTML5, CSS3, SCSS, Git, Reactstrap
+              </p>
+            </div>
+          </section>
+
+          <section class="project">
+            <div class="project__summary">
+              <h3 class="project__name">MosGorEnergosbyt</h3>
+              <div>Duration: 10.2018 – 12.2019</div>
+            </div>
+
+            <p class="project__desc">
+              For the client with more than 10mln subscribers we developed a
+              web-registration and electricity invoice payment service. Focusing
+              on people of different age and computer literacy level, we
+              maximally simplified the registration and interface. We also
+              developed a product that provides a summary of various graphs,
+              tables and other analytical data.
+            </p>
+
+            <div class="project__team">
+              <div class="team-info">
+                <h4>Team</h4>
+                <span>12 specialists</span>
+              </div>
+
+              <div>
+                <h4>Position</h4>
+                <span>Front-end developer</span>
+              </div>
+            </div>
+
+            <div class="project__responsibilities">
+              <h4>Responsibilities</h4>
+
+              <ul class="list">
+                <li>Implemented new features</li>
+                <li>Code optimization</li>
+                <li>Performance optimization</li>
+                <li>Bugs fixed</li>
+                <li>Stabilization</li>
+                <li>Support</li>
+              </ul>
+            </div>
+
+            <div class="project__tools">
+              <h4>Technologies and tools</h4>
+              <p>
+                JavaScript, React, Redux, Recharts, Leaflet, Moment, Redux-saga,
+                Jest, Enzyme, Webpack, SCSS, Git
+              </p>
+            </div>
+          </section>
+
+          <section class="project">
+            <div class="project__summary">
+              <h3 class="project__name">FTI</h3>
+              <div>Duration: 04.2018 – 10.2018</div>
+            </div>
+
+            <p class="project__desc">
+              FTI Touristik operates as a tour operator and travel agency in
+              Germany. The company offers tours and holiday destinations
+              worldwide. It also provides holidays with accommodation, long haul
+              flights, and round trips. The company distributes its products
+              through travel agencies. Andersen team was responsible for
+              language courses module and vouchers application.
+            </p>
+
+            <div class="project__team">
+              <div class="team-info">
+                <h4>Team</h4>
+                <span>4 specialists</span>
+              </div>
+
+              <div>
+                <h4>Position</h4>
+                <span>Front-end developer</span>
+              </div>
+            </div>
+
+            <div class="project__responsibilities">
+              <h4>Responsibilities</h4>
+
+              <ul class="list">
+                <li>Developed SPA using React and Redux, Preact</li>
+                <li>Developed new features and components</li>
+                <li>Identified and addressed performance bottlenecks</li>
+                <li>
+                  Created technical documentation for reference and reporting
+                </li>
+                <li>
+                  Utilized good design practices, code reuse and wrote efficient
+                  source code
+                </li>
+                <li>Stabilization</li>
+              </ul>
+            </div>
+
+            <div class="project__tools">
+              <h4>Technologies and tools</h4>
+              <p>
+                JavaScript, React, Redux, Preact, SCSS, Webpack, Git, Ant Design
+              </p>
+            </div>
+          </section>
         </section>
       </section>
     </main>

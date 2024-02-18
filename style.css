@@ -31,7 +31,7 @@ h4 {
 
 .header {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 200px 1fr;
   column-gap: calc(var(--spacing) * 2);
   align-items: center;
   grid-area: header;
@@ -48,7 +48,8 @@ h4 {
 }
 
 .avatar {
-  height: 150px;
+  height: 200px;
+  width: auto;
   object-fit: unset;
   border-radius: 50%;
 }
