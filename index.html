@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,12 +15,30 @@
   <body class="body">
     <header class="header">
       <div class="avatar__container">
-        <img src="./1.jpg" class="avatar" alt="avatar" />
+        <img
+          src="./1.jpg"
+          srcset="./1-mobile.jpg 200w, ./1.jpg 640w"
+          sizes="(max-width: 600px) 120px, 200px"
+          class="avatar"
+          width="120px"
+          height="120px"
+          alt="Dmitry Svystun"
+        />
       </div>
 
       <div class="author">
         <h1 class="author__name">Dmitry Svystun</h1>
-        <p class="author__role">Front-end developer</p>
+        <p class="author__role">Senior Front-end Engineer</p>
+        <address class="author__contact">
+          <a href="mailto:d.svystun@outlook.com">d.svystun@outlook.com</a>
+          <span class="author__contact-link">
+            ·
+            <a  href="https://www.linkedin.com/in/dmitry-svystun">LinkedIn</a>
+
+            ·
+            Odesa, Ukraine
+          </span>
+        </address>
       </div>
     </header>
 
@@ -28,76 +46,169 @@
       <section class="basic-information">
         <h2 class="project__header">Professional summary</h2>
         <article class="action-item">
-          <p class="author_summary">
-            Front-end developer with almost 7 years of experience in software
-            development and good knowledge of React. The technology stack
-            includes JavaScript as the main programming language. A mature team
-            worker who is adaptable to all challenging situations and able to
-            work well under pressure and adhere to strict deadlines.
+          <p class="author_summary">Senior front-end engineer with 9+ years building React and
+            TypeScript products in retail, media, fintech, and healthcare. Led
+            marketplace and catalog platforms at enterprise scale (500k+ SKUs
+            per year). Strong in design systems, performance, and complex
+            UI—editors, workflows, and data-heavy admin tools. Comfortable
+            leading features end-to-end in distributed agile teams of 5-30
+            specialists.
           </p>
         </article>
 
         <article class="action-item">
-          <h3>Industries</h3>
+          <h3>Domains</h3>
 
-          <p>Healthcare, Property, Travel, E-Commerce, Entertainment</p>
+          <p>
+            Retail marketplaces, media production tools, fintech, utilities,
+            travel, e-commerce, healthcare
+          </p>
+        </article>
+
+        <article class="action-item">
+          <h3>Languages</h3>
+
+          <p>English — professional working proficiency · Ukrainian — native</p>
         </article>
 
         <article class="action-item">
           <h3>Technologies and tools</h3>
 
           <ul class="list">
-            <li>JavaScript, TypeScript</li>
-            <li>React, GraphQL, Next.js, Nest.js</li>
-            <li>HTML, CSS, SCSS, LESS, Styled-components</li>
-            <li>Jest, Enzyme, React Testing Library, Cypress, Playwright</li>
-            <li>Git</li>
-            <li>Webpack, Vite</li>
-            <li>Postgres, Prisma, Docker</li>
-            <li>Nx, Lerna</li>
+            <li>
+              <strong>Core:</strong> TypeScript, JavaScript, React, Next.js,
+              Node.js
+            </li>
+            <li>
+              <strong>State &amp; data:</strong> Redux Toolkit, Zustand,
+              TanStack Query, GraphQL, REST
+            </li>
+            <li>
+              <strong>UI &amp; styling:</strong> Material UI, Ant Design, Styled
+              Components, Tailwind CSS, SCSS
+            </li>
+            <li>
+              <strong>Testing:</strong> Vitest, React Testing Library, Cypress,
+              Playwright
+            </li>
+            <li>
+              <strong>Platform &amp; tooling:</strong> Vite, Webpack, Docker,
+              PostgreSQL, Prisma, Nx
+            </li>
           </ul>
         </article>
       </section>
 
       <section class="projects_container">
-        <h2 class="project__header">Pr0jects</h2>
+        <h2 class="project__header">Projects</h2>
 
         <section class="projects">
           <section class="company_container">
-            <header class="company__name">Luxoft</header>
+            <header class="company__name">Develux</header>
+            <p class="company__meta">
+              Senior front-end developer · 10.2025 - present
+            </p>
             <section class="company">
               <section class="project">
                 <section class="project__summary">
-                  <h3 class="project__name">Tesco</h3>
-                  <div class="duration">Duration: 05.2022 - till now</div>
+                  <h3 class="project__name">Studyagent</h3>
+                  <div class="duration">Duration: 10.2025 - present</div>
                 </section>
 
-                <p class="project__desc">
-                  While working in the Tesco company we have developed taxonomy
-                  service, regulations service, keywords and synonyms services.
-                  I've also committed to our design system to increase
-                  functionality of components library. Latest big feature for
-                  the company that we have developed was marketplace adoption
-                  into Tesco products system.
-                </p>
+                <div class="project__desc">
+                  <p>
+                    AI-assisted document platform: create content via prompts,
+                    check plagiarism, detect AI-generated text, and humanize
+                    output.
+                  </p>
+                  <ul class="list">
+                    <li>
+                      Introduced application-wide theming and migrated to a new
+                      component library, improving UI consistency across the
+                      product.
+                    </li>
+                    <li>
+                      Extended the TipTap editor with custom headers and
+                      document upload flows for richer authoring.
+                    </li>
+                    <li>
+                      Shipped additional editor and document-management features
+                      used by the core writing workflow.
+                    </li>
+                  </ul>
+                </div>
 
                 <div class="project__team">
                   <section class="team-info">
                     <h4>Team</h4>
-                    <span>20 specialists</span>
-                  </section>
-
-                  <section>
-                    <h4>Position</h4>
-                    <span>Senior front-end developer</span>
+                    <span>30 specialists</span>
                   </section>
                 </div>
 
                 <section class="project__tools">
                   <h4>Technologies and tools</h4>
                   <p class="project__technologies">
-                    React, Redux, Redux Toolkit, React Router, React Hook Form,
-                    Styled-components, Git
+                    React, Zustand, TanStack Query, React Hook Form, Material
+                    UI, Vitest, Claude Code
+                  </p>
+                </section>
+              </section>
+            </section>
+          </section>
+
+          <section class="company_container">
+            <header class="company__name">Luxoft</header>
+            <p class="company__meta">
+              Senior front-end developer · 05.2022 - 10.2025 · Concurrent client
+              engagements
+            </p>
+            <section class="company">
+              <section class="project">
+                <section class="project__summary">
+                  <h3 class="project__name">Tesco</h3>
+                  <div class="duration">
+                    Client: UK grocery retail · 05.2022 - 10.2025
+                  </div>
+                </section>
+
+                <div class="project__desc">
+                  <p>
+                    Internal product suite for managing Tesco's product catalog,
+                    regulations, and marketplace operations.
+                  </p>
+                  <ul class="list">
+                    <li>
+                      Led front-end delivery of the Marketplace feature,
+                      onboarding 500k+ new products in the first year.
+                    </li>
+                    <li>
+                      Owned and contributed to core services: Taxonomy,
+                      Regulations, Keywords, Ranges, Taxonomy Automation, and
+                      Synonym Services.
+                    </li>
+                    <li>
+                      Drove AI integration into catalog workflows and enhanced
+                      the design system and component library.
+                    </li>
+                    <li>
+                      Helped decommission external services and onboard new
+                      customers, improving operational efficiency across teams.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project__team">
+                  <section class="team-info">
+                    <h4>Team</h4>
+                    <span>20 specialists</span>
+                  </section>
+                </div>
+
+                <section class="project__tools">
+                  <h4>Technologies and tools</h4>
+                  <p class="project__technologies">
+                    React, Redux Toolkit, React Router, React Hook Form,
+                    Styled-components, Vitest, Cypress
                   </p>
                 </section>
               </section>
@@ -105,34 +216,42 @@
               <section class="project">
                 <section class="project__summary">
                   <h3 class="project__name">DreamWorks</h3>
-                  <div class="duration">Duration: 10.2022 - till now</div>
+                  <div class="duration">
+                    Client: entertainment / media · 10.2022 - 10.2025
+                  </div>
                 </section>
 
-                <p class="project__desc">
-                  During the period of work we have implemented threejs scene,
-                  so the artists could watch closely different models and open
-                  them directly in the app they need on the remote machine and a
-                  catalog for quick preview of different assets. Also, we have
-                  implemented application for tracking the packages and
-                  shipments.
-                </p>
+                <div class="project__desc">
+                  <p>
+                    Catalog platform for production artists to manage digital
+                    assets across studio tooling.
+                  </p>
+                  <ul class="list">
+                    <li>
+                      Led the Catalog platform: preview asset variants, create
+                      assets and tags, search entities, view metadata, and open
+                      items in artist tools such as Maya.
+                    </li>
+                    <li>
+                      Contributed to Courier, a secure file-sharing tool between
+                      machines and vendors that supports remote operations and
+                      significantly reduced processing time.
+                    </li>
+                  </ul>
+                </div>
 
                 <div class="project__team">
                   <section class="team-info">
                     <h4>Team</h4>
                     <span>5 specialists</span>
                   </section>
-
-                  <section>
-                    <h4>Position</h4>
-                    <span>Senior front-end developer</span>
-                  </section>
                 </div>
 
                 <section class="project__tools">
                   <h4>Technologies and tools</h4>
                   <p class="project__technologies">
-                    React, Redux-saga, React Router, TanStack Query, Antd, Git
+                    React, Redux-saga, React Router, TanStack Query, Ant Design,
+                    Jotai, Zustand, Playwright
                   </p>
                 </section>
               </section>
@@ -141,37 +260,45 @@
 
           <section class="company_container">
             <header class="company__name">Lohika</header>
+            <p class="company__meta">
+              Senior front-end developer · 01.2021 - 05.2022 · Concurrent client
+              engagements
+            </p>
             <section class="company">
               <section class="project">
                 <div class="project__summary">
                   <h3 class="project__name">Marqeta</h3>
-                  <div class="duration">Duration: 01.2021 – 05.2022</div>
+                  <div class="duration">
+                    Client: fintech · 01.2021 - 05.2022
+                  </div>
                 </div>
 
-                <p class="project__desc">
-                  Marqeta is online-banking company. During the working period
-                  in the company we have implemented online issuing of banking
-                  cards, added tokenization to physical cards and improved UX
-                  for the digital wallets service.
-                </p>
+                <div class="project__desc">
+                  <p>Card-issuing platform for a US online-banking company.</p>
+                  <ul class="list">
+                    <li>
+                      Built front-end flows for online card issuing and
+                      tokenization of physical cards.
+                    </li>
+                    <li>
+                      Improved UX for the digital wallets service used by
+                      banking customers.
+                    </li>
+                  </ul>
+                </div>
 
                 <div class="project__team">
                   <div class="team-info">
                     <h4>Team</h4>
                     <span>20+ specialists</span>
                   </div>
-
-                  <div>
-                    <h4>Position</h4>
-                    <span>Senior front-end developer</span>
-                  </div>
                 </div>
 
                 <div class="project__tools">
                   <h4>Technologies and tools</h4>
                   <p class="project__technologies">
-                    React, React router, MobX, TypeScript, Lerna, Apollo,
-                    GraphQL, Git
+                    React, React Router, MobX, TypeScript, Lerna, Apollo,
+                    GraphQL
                   </p>
                 </div>
               </section>
@@ -179,33 +306,40 @@
               <section class="project">
                 <div class="project__summary">
                   <h3 class="project__name">Virtru</h3>
-                  <div class="duration">Duration: 06.2021 – 05.2022</div>
+                  <div class="duration">
+                    Client: data security · 06.2021 - 05.2022
+                  </div>
                 </div>
 
-                <p class="project__desc">
-                  While working for the company we have implemented custom OIDC
-                  for our customers. Also, we were concentrating our efforts on
-                  Saas solutions related to data encryption for the government
-                  and business.
-                </p>
+                <div class="project__desc">
+                  <p>
+                    SaaS platform for data encryption serving government and
+                    enterprise customers.
+                  </p>
+                  <ul class="list">
+                    <li>
+                      Implemented custom OIDC authentication flows for customer
+                      integrations.
+                    </li>
+                    <li>
+                      Delivered encryption-focused UI for business and
+                      government SaaS products.
+                    </li>
+                  </ul>
+                </div>
 
                 <div class="project__team">
                   <div class="team-info">
                     <h4>Team</h4>
                     <span>15+ specialists</span>
                   </div>
-
-                  <div>
-                    <h4>Position</h4>
-                    <span>Senior front-end developer</span>
-                  </div>
                 </div>
 
                 <div class="project__tools">
                   <h4>Technologies and tools</h4>
                   <p class="project__technologies">
-                    React, React router, MobX, TypeScript, Lerna, Apollo,
-                    GraphQL, Git
+                    React, React Router, MobX, TypeScript, Lerna, Apollo,
+                    GraphQL
                   </p>
                 </div>
               </section>
@@ -214,37 +348,43 @@
 
           <section class="company_container">
             <header class="company__name">Attract group</header>
-
+            <p class="company__meta">
+              Senior front-end developer · 07.2020 - 01.2021
+            </p>
             <section class="company">
               <section class="project">
                 <div class="project__summary">
-                  <h3 class="project__name">J&H Tackle</h3>
-                  <div class="duration">Duration: 07.2020 – 01.2021</div>
+                  <h3 class="project__name">J&amp;H Tackle</h3>
+                  <div class="duration">
+                    Client: e-commerce · 07.2020 - 01.2021
+                  </div>
                 </div>
 
-                <p class="project__desc">
-                  While working on J&H Tackle I was responsible for building
-                  online store from scratch designing the architecture of the
-                  app and creating a code standards for other teammates
-                </p>
+                <div class="project__desc">
+                  <ul class="list">
+                    <li>
+                      Built the online store from scratch, including application
+                      architecture and front-end code standards for the team.
+                    </li>
+                    <li>
+                      Delivered a production-ready e-commerce experience on
+                      Next.js for a fishing tackle retailer.
+                    </li>
+                  </ul>
+                </div>
 
                 <div class="project__team">
                   <div class="team-info">
                     <h4>Team</h4>
                     <span>5 specialists</span>
                   </div>
-
-                  <div>
-                    <h4>Position</h4>
-                    <span>Senior front-end developer</span>
-                  </div>
                 </div>
 
                 <div class="project__tools">
                   <h4>Technologies and tools</h4>
                   <p class="project__technologies">
-                    TypeScript, React, Next.js, Redux, React Hook Form,
-                    Material-UI, Lodash, Axios, HTML, CSS, SCSS, Git
+                    TypeScript, React, Next.js, Redux, React Hook Form, Material
+                    UI, SCSS
                   </p>
                 </div>
               </section>
@@ -253,18 +393,21 @@
 
           <section class="company_container">
             <header class="company__name">Andersen</header>
-
+            <p class="company__meta">Front-end developer · 06.2018 - 07.2020</p>
             <section class="company">
               <section class="project">
                 <div class="project__summary">
-                  <h3 class="project__name">Parimatch</h3>
-                  <div class="duration">Duration: 04.2020 – 07.2020</div>
+                  <h3 class="project__name">Ultimate Performance</h3>
+                  <div class="duration">
+                    Client: fitness / healthcare · 06.2018 - 07.2020
+                  </div>
                 </div>
 
                 <p class="project__desc">
-                  During the working period we have developed admin panel for
-                  defining staff authorize level, setting up gifts at a region
-                  level, different data visualization, data reports.
+                  Web app for Ultimate Performance gyms across London and 7
+                  other countries. Administers training locations, trainers, and
+                  clients; tracks nutrition, sleep, weight, body composition,
+                  and progress photos to build individualized training programs.
                 </p>
 
                 <div class="project__team">
@@ -272,55 +415,13 @@
                     <h4>Team</h4>
                     <span>10 specialists</span>
                   </div>
-
-                  <div>
-                    <h4>Position</h4>
-                    <span>Front-end developer</span>
-                  </div>
                 </div>
 
                 <div class="project__tools">
                   <h4>Technologies and tools</h4>
                   <p class="project__technologies">
-                    React, Redux, GraphQL, ApolloClient, Semantic-UI, Lodash,
-                    HTML, CSS, SCSS, Git, Recharts
-                  </p>
-                </div>
-              </section>
-
-              <section class="project">
-                <div class="project__summary">
-                  <h3 class="project__name">TigerConnect</h3>
-                  <div class="duration">Duration: 01.2020 – 04.2020</div>
-                </div>
-
-                <p class="project__desc">
-                  A platform for organizing personal training systems for
-                  Ultimate Performance gyms located in London and in other 7
-                  countries. It is an app (iOS, Web) that administers training
-                  locations, trainers and their clients, as well as gathers many
-                  client's metrics (nutrition, sleep, weight, thickness of
-                  skin-fat stores, photos of progress, etc.), that are used to
-                  create their individual optimal training system.
-                </p>
-
-                <div class="project__team">
-                  <div class="team-info">
-                    <h4>Team</h4>
-                    <span>10 specialists</span>
-                  </div>
-
-                  <div>
-                    <h4>Position</h4>
-                    <span>Front-end developer</span>
-                  </div>
-                </div>
-
-                <div class="project__tools">
-                  <h4>Technologies and tools</h4>
-                  <p class="project__technologies">
-                    TypeScript, React, Redux, Redux-forms, Bootstrap 4, Lodash,
-                    Axios, HTML, CSS, SCSS, Git, Reactstrap
+                    TypeScript, React, Redux, Redux-forms, Bootstrap 4, SCSS,
+                    Reactstrap
                   </p>
                 </div>
               </section>
@@ -328,68 +429,40 @@
               <section class="project">
                 <div class="project__summary">
                   <h3 class="project__name">MosGorEnergosbyt</h3>
-                  <div class="duration">Duration: 10.2018 – 12.2019</div>
+                  <div class="duration">
+                    Client: utilities · 06.2018 - 12.2019
+                  </div>
                 </div>
 
-                <p class="project__desc">
-                  For the client with more than 10mln subscribers we developed a
-                  web-registration and electricity invoice payment service.
-                  Focusing on people of different age and computer literacy
-                  level, we maximally simplified the registration and interface.
-                  We also developed a product that provides a summary of various
-                  graphs, tables and other analytical data.
-                </p>
+                <div class="project__desc">
+                  <ul class="list">
+                    <li>
+                      Built web registration and electricity invoice payment
+                      services for a utility with 10 million subscribers.
+                    </li>
+                    <li>
+                      Simplified registration and UI for users of varying ages
+                      and computer literacy.
+                    </li>
+                    <li>
+                      Developed an analytics dashboard with graphs, tables, and
+                      operational summaries.
+                    </li>
+                  </ul>
+                </div>
 
                 <div class="project__team">
                   <div class="team-info">
                     <h4>Team</h4>
                     <span>12 specialists</span>
                   </div>
-
-                  <div>
-                    <h4>Position</h4>
-                    <span>Front-end developer</span>
-                  </div>
                 </div>
 
                 <div class="project__tools">
                   <h4>Technologies and tools</h4>
                   <p class="project__technologies">
-                    JavaScript, React, Redux, Recharts, Leaflet, Moment,
-                    Redux-saga, Jest, Enzyme, Webpack, SCSS, Git
-                  </p>
-                </div>
-              </section>
-
-              <section class="project">
-                <div class="project__summary">
-                  <h3 class="project__name">FTI</h3>
-                  <div class="duration">Duration: 04.2018 – 10.2018</div>
-                </div>
-
-                <p class="project__desc">
-                  FTI Touristik operates as a tour operator and travel agency in
-                  Germany. Andersen team was responsible for language courses
-                  module and vouchers application.
-                </p>
-
-                <div class="project__team">
-                  <div class="team-info">
-                    <h4>Team</h4>
-                    <span>4 specialists</span>
-                  </div>
-
-                  <div>
-                    <h4>Position</h4>
-                    <span>Front-end developer</span>
-                  </div>
-                </div>
-
-                <div class="project__tools">
-                  <h4>Technologies and tools</h4>
-                  <p class="project__technologies">
-                    JavaScript, React, Redux, Preact, SCSS, Webpack, Git, Ant
-                    Design
+                    JavaScript, React, Redux, Recharts, Leaflet, Redux-saga,
+                    Jest, Webpack, SCSS
                   </p>
                 </div>
               </section>
